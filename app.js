@@ -38,6 +38,13 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/project/:id', project.view);
+app.get('/grid', index.viewGrid);
+
+//register 'alternate'
+//to the experimental condition
+
+//app.get('/alternate', index.viewAlternate);
+
 // Example route
 // app.get('/users', user.list);
 
